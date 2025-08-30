@@ -1,0 +1,25 @@
+.header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e1f3e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    cursor: pointer;
+}
+
+.header-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.header-right svg {
+    font-size: 24px;
+    cursor: pointer;
+}

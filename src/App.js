@@ -1,16 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useRoutes } from "react-router-dom";
 import Signup from './pages/signup';
 import Login from './pages/login';
+import routes from './routes';
 
 function App() {
-  return (
-    <Routes>
-      <Route path="/signup" element={<Signup />} />
-      <Route path="/" element={<Login />} />
-    </Routes>
-  );
+   const routing = useRoutes(routes);
+  return routing;
 }
 
 export default App;

@@ -1,0 +1,20 @@
+.footer {
+    margin-top: auto;
+    background-color: #e1f3e6;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.footer-right {
+   padding-right: 10px;
+}
+
+.footer-icons{
+    display: flex;
+    font-size: 10px;
+    cursor: pointer;
+    gap: 10px;
+}

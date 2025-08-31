@@ -84,9 +84,42 @@
   background-color: green;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 25px;
   cursor: pointer;
   width: 70%;
   align-self: center;
   margin-bottom: 10px;
 }
+
+
+.cart-controls button:hover {
+  background-color: #45a049;
+}
+
+.cart-controls {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;   /* center items inside */
+  background-color: #4caf50; /* green */
+  border-radius: 25px;
+  padding: 5px 15px;
+  gap: 15px;
+  color: white;
+  font-weight: bold;
+  margin: 10px auto;         /* centers the whole pill */
+}
+.cart-controls button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cart-controls span {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+

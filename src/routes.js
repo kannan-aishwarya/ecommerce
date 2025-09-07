@@ -6,6 +6,7 @@ import Layout from "./components/layout";
 import { Children } from "react";
 import Home from "./pages/home";
 import Profile from "./pages/profile";
+import CartPage from "./pages/cart";
 
 
 const routes = [
@@ -21,7 +22,8 @@ const routes = [
         ),
         children: [ 
             { path: "/home", element: <Home /> },
-            { path: "/profile", element: <Profile/>}
+            { path: "/profile", element: <Profile/>},
+            { path: "/cart", element: <CartPage />}
         ],
     },
     {

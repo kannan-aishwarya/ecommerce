@@ -5,6 +5,7 @@ import {auth}  from "../firebase";
 import "./signup.css";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { Link, useNavigate } from "react-router-dom";
+import { signUpUser } from "../services/userService";
 
 function Signup() {
 
@@ -18,6 +19,7 @@ function Signup() {
         .then((userCredential) => {
         console.log("User registered:", userCredential.user);
         navigate("/home");
+        signUpUser(email);
         })
         .catch((error) => {
           console.error("Error:", error.message);

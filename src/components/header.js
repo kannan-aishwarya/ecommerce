@@ -14,7 +14,7 @@ function Header() {
         </div>
         <div className="header-right">
             <FaSearch size={30} color="black"/>
-            <FaCartPlus size={30} color="black"/>
+            <FaCartPlus size={30} color="black" onClick={() => navigate("/cart")}/>
             <FaUser size={30} color="black" onClick={() => navigate("/profile")}/>
         </div>
         
